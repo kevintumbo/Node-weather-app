@@ -1,5 +1,11 @@
 const request = require('request');
 
+/**
+ * [geocodeAddress description]
+ * @param  {[string]}   address  [address of location ]
+ * @param  {Function} callback [callback]
+ * @return {[function]}            [callback that returns the response ]
+ */
 const geocodeAddress = (address, callback) => {
   encodedAddress = encodeURI(address);
   request({
